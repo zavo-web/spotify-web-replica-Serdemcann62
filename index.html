@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify Layout</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="headbar">
+      <a href="#" class="logo">
+        <img src="https://via.placeholder.com/30" alt="Spotify Logo" />
+      </a>
+
+      <nav class="nav">
+        <a href="#" class="home-btn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="24"
+            height="24"
+          >
+            <path
+              fill="white"
+              d="M12 3l10 9h-4v9h-4v-6h-4v6H6v-9H2l10-9z"
+            ></path>
+          </svg>
+        </a>
+        <div class="search-bar">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="20"
+            height="20"
+          >
+            <path
+              fill="gray"
+              d="M10 2a8 8 0 0 1 6.32 12.9l5.39 5.39-1.42 1.42-5.39-5.39A8 8 0 1 1 10 2zm0 2a6 6 0 1 0 0 12 6 6 0 0 0 0-12z"
+            ></path>
+          </svg>
+          <input type="text" placeholder="Wat wil je afspelen?" />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="20"
+            height="20"
+          >
+            <path fill="gray" d="M9 9h6v6H9V9z"></path>
+          </svg>
+        </div>
+      </nav>
+
+      <div class="actions">
+        <a href="#" class="signup">Aanmelden</a>
+        <button class="login-btn">Inloggen</button>
+      </div>
+    </header>
+    <div class="layout">
+      <aside class="sidebar">
+        <header>
+          <h1>Bibliotheek</h1>
+          <button>Playlist maken</button>
+        </header>
+        <section>
+          <h2></h2>
+        </section>
+        <footer>
+          <nav>
+            <a href="#">Juridisch</a>
+            <a href="#">Privacybeleid</a>
+            <a href="#">Cookie-instellingen</a>
+          </nav>
+          <button class="language-btn">Nederlands</button>
+        </footer>
+      </aside>
+      <main>
+        <section class="content">
+          <section class="popular-artists">
+            <h2>Populaire artiesten</h2>
+            <div class="artist-grid">
+              <figure>
+                <img src="https://via.placeholder.com/100" alt="Lady Gaga" />
+                <figcaption>Lady Gaga</figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="https://via.placeholder.com/100"
+                  alt="Billie Eilish"
+                />
+                <figcaption>Billie Eilish</figcaption>
+              </figure>
+              <figure>
+                <img src="https://via.placeholder.com/100" alt="David Guetta" />
+                <figcaption>David Guetta</figcaption>
+              </figure>
+              <figure>
+                <img src="https://via.placeholder.com/100" alt="Coldplay" />
+                <figcaption>Coldplay</figcaption>
+              </figure>
+              <figure>
+                <img src="https://via.placeholder.com/100" alt="The Weeknd" />
+                <figcaption>The Weeknd</figcaption>
+              </figure>
+            </div>
+          </section>
+
+          <section class="popular-albums">
+            <h2>Populaire albums en singles</h2>
+            <div class="album-grid">
+              <figure>
+                <img src="https://via.placeholder.com/150" alt="Album 1" />
+                <figcaption>Album 1</figcaption>
+              </figure>
+              <figure>
+                <img src="https://via.placeholder.com/150" alt="Album 2" />
+                <figcaption>Album 2</figcaption>
+              </figure>
+              <figure>
+                <img src="https://via.placeholder.com/150" alt="Album 3" />
+                <figcaption>Album 3</figcaption>
+              </figure>
+            </div>
+          </section>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
