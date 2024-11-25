@@ -10,6 +10,9 @@ body {
   background-color: #121212;
 }
 
+.spotifyLogo{
+	fill: white;
+}
 .headbar {
   display: flex;
   align-items: center;
@@ -96,13 +99,50 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  border-radius: 12px;
+  max-width: 700px;
+}
+.sidebarDeel {
+	background-color: #333;
+	height: fit-content;
+	padding: 12px;
+	border-radius: 12px;
+	align-self: center;
+}
+.sidebarDeel > *{
+	margin-bottom: 12px;
+
+}
+.sidebarTitel{
+	display:flex;
+	color: #999;
+	margin-bottom: 20px;
+
+}
+.libaryIcon{
+	fill: #999;
+	height: 24px;
+	margin-right: 12px;
+}
+.plusIcon{
+	height: 14.5px;
+	fill: #999;
+	margin-left: auto;
+	margin-right: 24px;
+}
+.sidebarButton {
+  all:unset;
+  background-color:#FFF;
+  color: black;
+  border-radius: 36px;
+  padding: 6px 12px;
 }
 
-.sidebar button {
-  background-color: #1db954;
-  border: none;
-  padding: 10px;
-  border-radius: 5px;
+.sidebarFooter {
+	display: flex;
+}
+.sidebarFooter *{
+	margin-right: 6px;
 }
 
 .content {
@@ -116,10 +156,16 @@ body {
   gap: 20px;
 }
 
-.artist-grid img,
+.artist-grid img{
+  border-radius: 50%;
+  width: 100%;
+}
 .album-grid img {
   width: 100%;
-  border-radius: 50%;
+  border-radius: 24px;
+}
+.popular-artists{
+  margin-bottom: 24px;
 }
 
 .input-icon-wrapper {
