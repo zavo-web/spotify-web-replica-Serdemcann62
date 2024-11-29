@@ -7,11 +7,11 @@
 body {
   font-family: Arial, sans-serif;
   color: white;
-  background-color: #121212;
+  background-color: black;
 }
 
-.spotifyLogo {
-  fill: white;
+.spotifyLogo{
+	fill: white;
 }
 .headbar {
   display: flex;
@@ -85,34 +85,35 @@ body {
   border-radius: 20px;
   cursor: pointer;
 }
-.main-container {
+
+.layout {
   display: grid;
   grid-template-columns: 250px 1fr;
   grid-template-rows: 1fr;
-  height: calc(100vh - 60px);
+  height: calc(100vh - 120px);
 }
 
 .sidebar {
-  grid-area: auto;
   background-color: #181818;
   padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   border-radius: 12px;
   max-width: 700px;
+  height: 80vw;
+  
+}
+.sidebar * {
+  margin-top: 12px;
 }
 
 .sidebarDeel {
-  background-color: #333;
-  height: fit-content;
-  padding: 12px;
-  border-radius: 12px;
-  align-self: center;
+	background-color: #333;
+	height: fit-content;
+	padding: 12px;
+	border-radius: 12px;
+	align-self: center;
+margin-bottom: 18px;
 }
-.sidebarDeel > * {
-  margin-bottom: 12px;
-}
+
 
 .sidebarDeel2 {
   background-color: #333;
@@ -122,71 +123,136 @@ body {
   align-self: center;
 }
 
-.sidebarDeel2 > * {
+.sidebarDeel2 > *{
   margin-bottom: 12px;
+
 }
-.sidebarTitel {
-  display: flex;
-  color: #999;
-  margin-bottom: 20px;
+.sidebarTitel{
+	display:flex;
+	color: #999;
+	margin-bottom: 20px;
+
 }
-.libaryIcon {
-  fill: #999;
-  height: 24px;
-  margin-right: 12px;
+.libaryIcon{
+	fill: #999;
+	height: 24px;
+	margin-right: 12px;
 }
-.plusIcon {
-  height: 14.5px;
-  fill: #999;
-  margin-left: auto;
-  margin-right: 24px;
+.plusIcon{
+	height: 14.5px;
+	fill: #999;
+	margin-left: auto;
+	margin-right: 24px;
 }
 .sidebarButton {
-  all: unset;
-  background-color: #fff;
+  all:unset;
+  background-color:#FFF;
   color: black;
   border-radius: 36px;
   padding: 6px 12px;
 }
 
 .sidebarFooter {
-  display: flex;
+	display: flex;
+  position: relative;
+  margin-top: auto;
+  margin-bottom: 12px;
 }
-.sidebarFooter * {
-  margin-right: 6px;
+.sidebarFooter *{
+	margin-right: 6px;
+}
+
+.hoofdText {
+  font-size: 18px;
+}
+
+
+.subText {
+ font-size: 12px;
 }
 
 .content {
-  grid-area: 2/1/1/2;
-  padding: 20px;
+  padding: 40px;
+  background-color: #212121;
+  border-radius: 12px;
+  margin-left: 24px;
+  overflow-y: scroll;
+  height: 80vh;
 }
 
 .artist-grid,
 .album-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  gap: 20px;
+  gap: 50px;
 }
 
-.artist-grid img {
+.artist-grid img{
   border-radius: 50%;
-  width: 100%;
+  width: 200px;
 }
 .album-grid img {
-  width: 100%;
-  border-radius: 24px;
+  width: 120px;
+  border-radius: 15px;
 }
-.popular-artists {
-  margin-bottom: 24px;
+.popular-artists{
+  margin-bottom: 50px;
 }
 
 .input-icon-wrapper {
   border-left: 1px solid white;
   padding-left: 16px;
 }
+.main{
+  height: 80%;
+}
 
 .input-icon {
   height: 24px;
   width: 24px;
   fill: white;
+}
+
+
+.mainFooter {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 50px;
+}
+
+
+
+
+
+.footer {
+  background-image: linear-gradient(90deg, #af2896, #509bf5);
+  height: fit-content;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  padding-left: 12px;
+  margin-top: 12px;
+}
+
+.footer * {
+  margin: 6px;
+}
+
+.loginButtonFooter {
+  all: unset;
+  color: var(--section-color);
+  background-color: var(--primary-color);
+  border-radius: 24px;
+  padding: 12px 32px;
+  height: 24px;
+  font-weight: 700;
+  font-size: 1rem;
+  position: relative;
+  margin-left: auto;
+  margin-right: 24px;
+}
+
+.footerText {
+  font-weight: 400;
+  font-size: 1rem;
 }
