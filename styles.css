@@ -10,8 +10,8 @@ body {
   background-color: #121212;
 }
 
-.spotifyLogo{
-	fill: white;
+.spotifyLogo {
+  fill: white;
 }
 .headbar {
   display: flex;
@@ -85,8 +85,7 @@ body {
   border-radius: 20px;
   cursor: pointer;
 }
-p
-.layout {
+.main-container {
   display: grid;
   grid-template-columns: 250px 1fr;
   grid-template-rows: 1fr;
@@ -105,15 +104,14 @@ p
 }
 
 .sidebarDeel {
-	background-color: #333;
-	height: fit-content;
-	padding: 12px;
-	border-radius: 12px;
-	align-self: center;
+  background-color: #333;
+  height: fit-content;
+  padding: 12px;
+  border-radius: 12px;
+  align-self: center;
 }
-.sidebarDeel > *{
-	margin-bottom: 12px;
-
+.sidebarDeel > * {
+  margin-bottom: 12px;
 }
 
 .sidebarDeel2 {
@@ -124,40 +122,38 @@ p
   align-self: center;
 }
 
-.sidebarDeel2 > *{
+.sidebarDeel2 > * {
   margin-bottom: 12px;
-
 }
-.sidebarTitel{
-	display:flex;
-	color: #999;
-	margin-bottom: 20px;
-
+.sidebarTitel {
+  display: flex;
+  color: #999;
+  margin-bottom: 20px;
 }
-.libaryIcon{
-	fill: #999;
-	height: 24px;
-	margin-right: 12px;
+.libaryIcon {
+  fill: #999;
+  height: 24px;
+  margin-right: 12px;
 }
-.plusIcon{
-	height: 14.5px;
-	fill: #999;
-	margin-left: auto;
-	margin-right: 24px;
+.plusIcon {
+  height: 14.5px;
+  fill: #999;
+  margin-left: auto;
+  margin-right: 24px;
 }
 .sidebarButton {
-  all:unset;
-  background-color:#FFF;
+  all: unset;
+  background-color: #fff;
   color: black;
   border-radius: 36px;
   padding: 6px 12px;
 }
 
 .sidebarFooter {
-	display: flex;
+  display: flex;
 }
-.sidebarFooter *{
-	margin-right: 6px;
+.sidebarFooter * {
+  margin-right: 6px;
 }
 
 .content {
@@ -172,7 +168,7 @@ p
   gap: 20px;
 }
 
-.artist-grid img{
+.artist-grid img {
   border-radius: 50%;
   width: 100%;
 }
@@ -180,7 +176,7 @@ p
   width: 100%;
   border-radius: 24px;
 }
-.popular-artists{
+.popular-artists {
   margin-bottom: 24px;
 }
 
