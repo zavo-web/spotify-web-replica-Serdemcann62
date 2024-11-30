@@ -186,17 +186,20 @@ margin-bottom: 18px;
 .album-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  gap: 50px;
+  gap: 20px;
+  margin-bottom: 50px;
 }
 
 .artist-grid img{
   border-radius: 50%;
-  width: 200px;
+  width: 170px;
+
 }
 .album-grid img {
   width: 120px;
   border-radius: 15px;
 }
+
 .popular-artists{
   margin-bottom: 50px;
 }
