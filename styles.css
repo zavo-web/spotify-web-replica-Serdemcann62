@@ -80,14 +80,7 @@ body {
   
 }
 
-.signup:hover {
-  scale: 1.03;
-  transition: all, 0,1;
-  cursor: pointer;
-  background-color: var(#1f1f1f);
- 
 
-}
 
 .login-btn {
   background-color: white;
@@ -97,47 +90,41 @@ body {
   border-radius: 30px;
   cursor: pointer;
 }
-.login-btn:hover {
-  color: white;
-  fill: white;
-  cursor: pointer;
-}
+
 
 .layout {
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 28% 72%;
   grid-template-rows: 1fr;
-  height: calc(100vh - 120px);
+  height: calc(100vh - 140px);
 }
 
 .sidebar {
-  background-color: #181818;
-  padding: 20px;
-  border-radius: 12px;
+  background-color: #121212;
+  padding: 10px;
+  border-radius: 4px;
   max-width: 700px;
+  grid-area: 1 / 1 / 2 / 2;
+}
 
-}
-.sidebar * {
-  margin-top: 12px;
-}
 
 .sidebarDeel {
-	background-color: #333;
+	background-color:#1f1f1f;
 	height: fit-content;
-	padding: 12px;
-	border-radius: 12px;
+	padding: 10px;
+	border-radius: 4px;
 	align-self: center;
-  margin-bottom: 18px;
+  margin-bottom: 24px;
 }
 .sidebarDeel *{
   margin-bottom: 12px;
 }
 
 .sidebarDeel2 {
-  background-color: #333;
+  background-color:#1f1f1f;
   height: fit-content;
   padding: 12px;
-  border-radius: 12px;
+  border-radius: 4px;
   align-self: center;
 }
 
@@ -171,13 +158,13 @@ body {
 }
 
 .sidebarFooter {
+  flex-wrap: wrap;
 	display: flex;
   position: relative;
   margin-top: auto;
   margin-bottom: 12px;
   margin: 32px 0;
   padding: 0 24px;
-
   border:0;
 }
 .sidebarFooter *{
@@ -196,16 +183,28 @@ body {
 
 .subText {
  font-size: 12px;
+ color:#999;
 }
 
 .content {
+  scrollbar-color: hsla(0, 0%, 100%, 0.3) transparent;
+  scrollbar-width: auto;
   flex-direction:row;
-  padding: 40px;
+  padding: 20px;
   background-color: #212121;
   border-radius: 12px;
-  margin-left: 24px;
+  margin-left: 8px;
   overflow-y: scroll;
+  overflow-x: hidden;
   height: 80vh;
+  background: #1f1f1f;
+  background: linear-gradient(180deg, #1f1f1f 0%, rgba(18, 18, 18, 1) 69%);
+  background-color: linear-gradient(
+    180deg,
+    rgba(#fff, 1) 0%,
+    rgba(18, 18, 18, 1) 69%
+  );
+  
 
   
 }
@@ -214,14 +213,14 @@ body {
 .album-grid { 
   display: flex;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  gap: 20px;
+  gap: 10px;
   margin-bottom: 40px;
   flex-direction: row;
 }
 
 .artist-grid img{
   border-radius: 50%;
-  width: 170px
+  width: 170px;
 
 }
 .album-grid img {
@@ -257,11 +256,12 @@ body {
 
 
 .mainFooter {
-  margin-left: 50px;
+  
   color: #666;  
 }
 .mainFooterStuk{
   display: flex;
+  padding-bottom: 200px;
   justify-content: space-between;
   border-bottom: #2f2f2f solid 1px;
 }
@@ -309,6 +309,7 @@ body {
 
 
 .playButton {
+  height: 24px;
   border-radius: 50%;
   margin-right: 12px;
   padding: 12px;
@@ -318,6 +319,7 @@ body {
   top: 152px;
   visibility: hidden;
   opacity: 0;
+
 }
 .playButton:hover{
   background-color: green;
@@ -329,3 +331,65 @@ body {
   transition: visibility 0s linear 0s, opacity 250ms;
 }
 
+.albumfotos{
+  position: relative;
+}
+
+.hoverOnderlijn:hover{
+  text-decoration-line:underline ;
+  cursor: pointer;
+}
+.hoverWit:hover{
+  color: #FFF;
+}
+
+.hoverBigger:hover{
+  scale: 1.03;
+  transition: all, 0.1s;
+  cursor: pointer;
+
+}
+.fotogrijs{
+  border-radius: 10px;
+  padding: 8px;
+}
+
+.hoverBackground:hover{
+  background-color: #2f2f2f;
+
+}
+
+
+
+.taalIcoon{
+  height: 16px;
+  fill: #FFF;
+}
+
+.taalButton{
+  padding: 6px 12px;
+  width:fit-content ;
+  display: flex;
+  border:1px white solid;
+  border-radius: 24px;
+
+}
+
+.sociaalicon{
+  fill: white;
+  height: 18px;
+  margin: unset;
+}
+.sociaaliconBorder{
+
+  background-color: #2f2f2f;
+  border-radius: 50%;
+  padding: 12px;
+  height: fit-content;
+
+}
+
+.rightsFooter{
+  margin-top: 36px;
+  color:#666;
+}
