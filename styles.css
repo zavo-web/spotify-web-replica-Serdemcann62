@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+
 body {
   font-family: Arial, sans-serif;
   color: white;
@@ -16,10 +17,10 @@ body {
 }
 .headbar {
   display: flex;
-  align-items: center;
+  align-items: center;  /* verticaal */
   justify-content: space-between;
   background-color: black;
-  padding: 10px 20px;
+  padding: 10px 20px; /* bovernonder linksrechts */
   height: 60px;
 }
 
@@ -173,6 +174,7 @@ body {
 
 .h6class {
   margin-right: 16px;
+  color: #666;
 }
 
 
@@ -209,14 +211,23 @@ body {
   
 }
 
-.artist-grid,
-.album-grid { 
+.album-grid{
+  display: flex;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 15px;
+  margin-bottom: 40px;
+  flex-direction: row;
+}
+
+.artist-grid {
   display: flex;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   gap: 10px;
   margin-bottom: 40px;
   flex-direction: row;
+
 }
+
 
 .artist-grid img{
   border-radius: 50%;
@@ -393,3 +404,5 @@ body {
   margin-top: 36px;
   color:#666;
 }
+
+
