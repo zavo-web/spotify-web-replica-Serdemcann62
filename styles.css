@@ -77,8 +77,7 @@ body {
 
 .signup {
   color: gray;
-  text-decoration: none;
-  
+  text-decoration: none;  
 }
 
 
@@ -105,15 +104,13 @@ body {
   padding: 10px;
   border-radius: 4px;
   max-width: 700px;
-  grid-area: 1 / 1 / 2 / 2;
 }
 
 
 .sidebarDeel {
 	background-color:#1f1f1f;
-	height: fit-content;
 	padding: 10px;
-	border-radius: 4px;
+	border-radius: 8px;
 	align-self: center;
   margin-bottom: 24px;
 }
@@ -125,7 +122,7 @@ body {
   background-color:#1f1f1f;
   height: fit-content;
   padding: 12px;
-  border-radius: 4px;
+  border-radius: 8px;
   align-self: center;
 }
 
@@ -145,13 +142,12 @@ body {
 	margin-right: 12px;
 }
 .plusIcon{
-	height: 14.5px;
+	height: 18px;
 	fill: #999;
 	margin-left: auto;
-	margin-right: 24px;
+	margin-right: 5px;
 }
 .sidebarButton {
-  all:unset;
   background-color:#FFF;
   color: black;
   border-radius: 36px;
@@ -159,7 +155,7 @@ body {
 }
 
 .sidebarFooter {
-  flex-wrap: wrap;
+  flex-wrap: wrap;  /* alles past in */
 	display: flex;
   position: relative;
   margin-top: auto;
@@ -187,6 +183,7 @@ body {
  font-size: 12px;
  color:#999;
 }
+
 
 .content {
   scrollbar-color: hsla(0, 0%, 100%, 0.3) transparent;
@@ -270,6 +267,7 @@ body {
   
   color: #666;  
 }
+
 .mainFooterStuk{
   display: flex;
   padding-bottom: 200px;
@@ -339,7 +337,7 @@ body {
 .albumfotos:hover .playButton {
   visibility: visible;
   opacity: 1;
-  transition: visibility 0s linear 0s, opacity 250ms;
+  transition: visibility 0s linear 0s, opacity 2550ms;
 }
 
 .albumfotos{
@@ -369,7 +367,6 @@ body {
   background-color: #2f2f2f;
 
 }
-
 
 
 .taalIcoon{
